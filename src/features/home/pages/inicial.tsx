@@ -1,7 +1,10 @@
-import NavBar from "../../../components/nav-bar";
+import { CarouselGrande } from '../components/carrousel-grande'
+import Desktop from '../components/layout/desktop'
 
 export default function Inicial() {
-  return <div>
-    <NavBar />
-  </div>
+  return (
+    <div>
+      <Desktop banner={<CarouselGrande />} />
+    </div>
+  )
 }

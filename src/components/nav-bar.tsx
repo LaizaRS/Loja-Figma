@@ -13,7 +13,6 @@ export default function NavBar() {
   const [menuAberto, setMenuAberto] = useState(false)
   return (
     <div>
-      {/* DESKTOP */}
       <div className="hidden md:flex justify-between items-center bg-black p-4 w-screen">
         <div className="flex gap-5 items-center text-white">
           <img src={Logo} alt="Logo da Meteora" />
@@ -25,11 +24,11 @@ export default function NavBar() {
               </li>
 
               <li>
-                <NavLink to="/Novidades">Novidades</NavLink>
+                <NavLink to="/">Novidades</NavLink>
               </li>
 
               <li>
-                <NavLink to="/Promocoes">Promoções</NavLink>
+                <NavLink to="/">Promoções</NavLink>
               </li>
             </ul>
           </nav>
@@ -57,7 +56,6 @@ export default function NavBar() {
         </ul>
       </div>
 
-      {/* MOBILE */}
       <div className="flex md:hidden justify-between items-center bg-black p-4 relative">
         <img src={Logo} alt="Logo" />
 
@@ -83,11 +81,11 @@ export default function NavBar() {
               </li>
 
               <li className="border-b border-gray-500 pb-2">
-                <NavLink to="/Novidades">Novidades</NavLink>
+                <NavLink to="/">Novidades</NavLink>
               </li>
 
               <li>
-                <NavLink to="/Promocoes">Promoções</NavLink>
+                <NavLink to="/">Promoções</NavLink>
               </li>
             </ul>
           </nav>
