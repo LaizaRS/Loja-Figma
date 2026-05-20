@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import BGL from '../../../assets/imagens/ImageL.svg'
+import Aleatorio from '../../../assets/imagens/aleatorio2.jpg'
 
 import Esquerda from '../../../assets/icones/left.svg?react'
 import Direita from '../../../assets/icones/right.svg?react'
 import Icone from '../../../components/icone'
 
 export function CarouselGrande() {
-  const imagens = [BGL, BGL, BGL]
+  const imagens = [BGL, Aleatorio, BGL]
   const [activeIndex, setActiveIndex] = useState(0)
 
   function next() {
@@ -19,7 +20,7 @@ export function CarouselGrande() {
 
   return (
     <div className="relative w-full  overflow-hidden">
-      <img src={imagens[activeIndex]} className="h-full w-full object-cover" />
+      <img src={imagens[activeIndex]} className="h-full max-h-138.25 w-full object-cover" />
 
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
         {imagens.map((_, i) => (
