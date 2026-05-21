@@ -14,6 +14,7 @@ import { CarouselGrande } from '../components/carrousel-grande'
 import CategoriaCard from '../components/categoria-card'
 import Desktop from '../components/layout/desktop'
 import ProdutosCard from '../components/produtos-card'
+import ReceberNoticia from '../components/receber-noticias'
 import SobreNos from '../components/sobre-nos'
 
 export default function Inicial() {
@@ -77,6 +78,8 @@ export default function Inicial() {
         ))}
 
         sobreNos={<SobreNos />}
+
+        receberNoticia={<ReceberNoticia />}
       />
     </div>
   )

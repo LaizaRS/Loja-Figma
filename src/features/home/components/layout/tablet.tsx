@@ -6,7 +6,7 @@ interface DesktopProps {
   receberNoticia?: React.ReactNode
 }
 
-export default function Desktop({
+export default function Tablet({
   banner,
   cardFavoritos,
   cardProdutos,
