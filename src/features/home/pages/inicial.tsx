@@ -14,6 +14,7 @@ import { CarouselGrande } from '../components/carrousel-grande'
 import CategoriaCard from '../components/categoria-card'
 import Desktop from '../components/layout/desktop'
 import ProdutosCard from '../components/produtos-card'
+import SobreNos from '../components/sobre-nos'
 
 export default function Inicial() {
   const categorias = [
@@ -74,6 +75,8 @@ export default function Inicial() {
         cardProdutos={produtos.map(([nome, descricao, preco, imagem]) => (
           <ProdutosCard src={imagem} produto={nome} descricao={descricao} preco={preco} />
         ))}
+
+        sobreNos={<SobreNos />}
       />
     </div>
   )
